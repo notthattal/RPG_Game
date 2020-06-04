@@ -9,35 +9,8 @@ namespace RPG.Movement
 {
     public class Mover : MonoBehaviour
     {
-        void Update()
+        private void Update()
         {
-            InteractWithCombat();
-            InteractWithMovement();
-        }
-
-        private void InteractWithCombat()
-        {
-            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
-            foreach (RaycastHit hit in hits)
-            {
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if (target == null)
-                {
-                    continue;
-                }
-                if (Input.GetMouseButtonDown(0))
-                {
-                    GetComponent<Fighter>().Attack(target);
-                }
-            }
-        }
-
-        private void InteractWithMovement()
-        {
-            if (Input.GetMouseButton(0))
-            {
-                MoveToCursor();
-            }
             UpdateAnimator();
         }
 
@@ -47,16 +20,6 @@ namespace RPG.Movement
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
-        }
-
-        private void MoveToCursor()
-        {
-            RaycastHit hit;
-            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
-            if (hasHit)
-            {
-                MoveTo(hit.point);
-            }
         }
 
         private static Ray GetMouseRay()
