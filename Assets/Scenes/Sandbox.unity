@@ -183,6 +183,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2315931772714591982, guid: ab0db09d51beb400790e5aa26b169de1,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315931772714591982, guid: ab0db09d51beb400790e5aa26b169de1,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315931772714591982, guid: ab0db09d51beb400790e5aa26b169de1,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315931772714591982, guid: ab0db09d51beb400790e5aa26b169de1,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2632142453056088652, guid: ab0db09d51beb400790e5aa26b169de1,
         type: 3}
       propertyPath: healthPoints
