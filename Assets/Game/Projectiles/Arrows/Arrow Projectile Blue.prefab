@@ -152,5 +152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrow Projectile Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 6915621960764818758, guid: 6234d532ac30c48a8ab155e6a76053df,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 4380989374859311558, guid: e64d5aea0f2194682a6445211eeacb38,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6234d532ac30c48a8ab155e6a76053df, type: 3}
