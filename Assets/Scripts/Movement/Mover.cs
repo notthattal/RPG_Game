@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using RPG.Resources;
 using RPG.Core;
 using UnityEngine;
 using UnityEngine.AI;
