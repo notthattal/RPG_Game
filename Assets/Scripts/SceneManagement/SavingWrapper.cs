@@ -29,6 +29,10 @@ namespace RPG.SceneManagement
             {
                 Save();
             }
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                Delete();
+            }
         }
 
         public void Save()
@@ -43,6 +47,10 @@ namespace RPG.SceneManagement
             GetComponent<SavingSystem>().Load(defaultSaveFile);
         }
 
+        public void Delete()
+        {
+            GetComponent<SavingSystem>().Delete(defaultSaveFile);
+        }
 
     }
 }
