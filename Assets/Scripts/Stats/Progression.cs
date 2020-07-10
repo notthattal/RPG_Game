@@ -20,7 +20,7 @@ namespace RPG.Stats
             { 
                 return 0; 
             }
-
+            
             return levels[level - 1];
         }
 
