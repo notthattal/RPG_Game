@@ -36,7 +36,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1380992774322878837}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -173,7 +174,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c47ff9447ca410fb53d1bab90070cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  regnerationPercentage: 70
+  takeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7955056045985572956}
+        m_MethodName: Spawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2951288071255523365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +233,99 @@ MonoBehaviour:
   startingLevel: 1
   characterClass: 1
   progression: {fileID: 11400000, guid: 0d878f1a9c51b469592a10dcf39af74f, type: 2}
+  levelUpParticleEffect: {fileID: 0}
+--- !u!114 &7955056045985572956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2639444750720916342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52457e5daeff343bebd99d5fe6562844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextPrefab: {fileID: 4531825960582592116, guid: 43466c6c21fdb44b8a56b61c9dda30fb,
+    type: 3}
+--- !u!1001 &6875942040846718072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3229659481821787720}
+    m_Modifications:
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920911640189898510, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+        type: 3}
+      propertyPath: m_Name
+      value: Damage Text Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75aef2348cfc34f59bcbc0b3b1e211fa, type: 3}
+--- !u!1 &2639444750720916342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8920911640189898510, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 6875942040846718072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1380992774322878837 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5496086200407207181, guid: 75aef2348cfc34f59bcbc0b3b1e211fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 6875942040846718072}
+  m_PrefabAsset: {fileID: 0}
