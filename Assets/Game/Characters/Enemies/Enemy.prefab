@@ -290,6 +290,11 @@ PrefabInstance:
       propertyPath: healthComponent
       value: 
       objectReference: {fileID: 2632142453056088652}
+    - target: {fileID: 2252519659753071757, guid: 406baf7f7eb744e9da9585dae7907903,
+        type: 3}
+      propertyPath: rootCanvas
+      value: 
+      objectReference: {fileID: 8802835898582612641}
     - target: {fileID: 2725077599606668147, guid: 406baf7f7eb744e9da9585dae7907903,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -352,3 +357,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 406baf7f7eb744e9da9585dae7907903, type: 3}
+--- !u!223 &8802835898582612641 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 870597272745458888, guid: 406baf7f7eb744e9da9585dae7907903,
+    type: 3}
+  m_PrefabInstance: {fileID: 8519982594395735657}
+  m_PrefabAsset: {fileID: 0}
